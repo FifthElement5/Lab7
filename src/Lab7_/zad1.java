@@ -49,7 +49,7 @@ public class zad1 {
             odczyt.close();
             return;
         }
-        Kalkulator.calculate(operation);
+        Kalkulator.zliczanie(operation);
         odczyt.close();
     }
          

@@ -26,44 +26,49 @@ public class Kalkulator {
         listaLiczb.add(l6);
         listaLiczb.add(l7);
     }
-//  Głębokie kopiowanie Listy.
-    public Kalkulator (Kalkulator Kalkulator) {
-        for(Integer i : Kalkulator.listaLiczb) {
+//  konstruktor kopiujacy
+    public Kalkulator (Kalkulator kalkulator) {
+        for(Integer i : kalkulator.listaLiczb) {
             this.listaLiczb.add(i);
         }
     }
-    //Metody liczące i zwracające wartości.
-    public void calculate(char działanie) {
-        switch(działanie) {
+    //Metody liczące 
+    public void zliczanie(char operator) {
+        switch(operator) {
         case '+':
-            for(int i = 0; i < data.size(); i++) {
-             result += data.get(i);
+            for(int i = 0; i < listaLiczb.size(); i++) {
+             wynik += listaLiczb.get(i);
             }
             break;
         case '-':
-            result = data.get(0);
-            for(int i = 1; i < data.size(); i++) {
-                result -= data.get(i); 
+        	wynik = listaLiczb.get(0);
+            for(int i = 1; i < listaLiczb.size(); i++) {
+            	wynik -= listaLiczb.get(i); 
             }
             break;
         case '*':
-            result = data.get(0);
-            for(int i = 1; i < data.size(); i++) {
-                result *= data.get(i);
+        	wynik = listaLiczb.get(0);
+            for(int i = 1; i < listaLiczb.size(); i++) {
+            	wynik *= listaLiczb.get(i);
             }
             break;
         case'/':
-            result = data.get(0);
-            for(int i =1; i < data.size(); i++) {
-                result /= data.get(i);
+            wynik = listaLiczb.get(0);
+            for(int i =1; i < listaLiczb.size(); i++) {
+            	
+                wynik /= listaLiczb.get(i);
             }
             break;
         }
-        System.out.println("Wynik: " + result);
+        System.out.println("Wynik: " + wynik);
     }
 //  Metoda zwracająca wynik.
-    public double getResult() {
-        return result;
-    }
+  
+	public double getWynik() {
+		return wynik;
+	}
+	public void setWynik(double wynik) {
+		this.wynik = wynik;
+	}
     
 }
