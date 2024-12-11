@@ -8,6 +8,10 @@ public class Kalkulator {
     ArrayList<Integer> listaLiczb = new ArrayList<Integer>();
  
     double wynik = 0;
+    
+    public Kalkulator() {
+    	
+    }
     //deklaracja konstruktora jedno , 4 i 7 argumętowego.
     public Kalkulator(int l1) {
         listaLiczb.add(l1);
