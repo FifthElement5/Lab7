@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Kalkulator {
 //  Deklaracja prywatnej  Listy.
     ArrayList<Integer> listaLiczb = new ArrayList<Integer>();
+ 
     double wynik = 0;
     //deklaracja konstruktora jedno , 4 i 7 argumętowego.
     public Kalkulator(int l1) {
@@ -54,21 +55,40 @@ public class Kalkulator {
             break;
         case'/':
             wynik = listaLiczb.get(0);
+            
             for(int i =1; i < listaLiczb.size(); i++) {
-            	
-                wynik /= listaLiczb.get(i);
+                if(listaLiczb.get(i) != 0)  {
+                    wynik /= listaLiczb.get(i);
+                } else { 
+                   System.out.println("Pamietaj selero nie dziel przez zero");
+                   
+                   break;
+                }
             }
             break;
         }
-        System.out.println("Wynik: " + wynik);
+       
     }
 //  Metoda zwracająca wynik.
   
+	public ArrayList<Integer> getListaLiczb() {
+		return listaLiczb;
+	}
+	public void setListaLiczb(ArrayList<Integer> listaLiczb) {
+		this.listaLiczb = listaLiczb;
+	}
+	public int getError() {
+		return error;
+	}
+	public void setError(int error) {
+		this.error = error;
+	}
 	public double getWynik() {
 		return wynik;
 	}
 	public void setWynik(double wynik) {
-		this.wynik = wynik;
-	}
+		
+		this.wynik = wynik;}
+		
     
 }
