@@ -10,6 +10,13 @@ public class Kalkulator {
     double wynik = 0;
     
     public Kalkulator() {
+        listaLiczb.add(0);
+        listaLiczb.add(0);
+        listaLiczb.add(0);
+        listaLiczb.add(0);
+        listaLiczb.add(0);
+        listaLiczb.add(0);
+        listaLiczb.add(0);
     	
     }
     //deklaracja konstruktora jedno , 4 i 7 argumętowego.
@@ -73,6 +80,10 @@ public class Kalkulator {
         }
        
     }
+    
+    public void wypisywanie() {
+    	System.out.println("wynik test" + wynik);
+    }
 //  Metoda zwracająca wynik.
   
 	public ArrayList<Integer> getListaLiczb() {
@@ -81,12 +92,7 @@ public class Kalkulator {
 	public void setListaLiczb(ArrayList<Integer> listaLiczb) {
 		this.listaLiczb = listaLiczb;
 	}
-	public int getError() {
-		return error;
-	}
-	public void setError(int error) {
-		this.error = error;
-	}
+	
 	public double getWynik() {
 		return wynik;
 	}
