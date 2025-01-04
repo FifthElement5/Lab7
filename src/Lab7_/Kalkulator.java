@@ -82,7 +82,7 @@ public class Kalkulator {
     }
     
     public void wypisywanie() {
-    	System.out.println("wynik test" + wynik);
+    	System.out.println("wynik:" + wynik);
     }
 //  Metoda zwracająca wynik.
   
