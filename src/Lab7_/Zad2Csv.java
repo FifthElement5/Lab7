@@ -9,20 +9,20 @@ public class Zad2Csv {
         File file = new File("testy888.csv");
         Scanner in = new Scanner(file);
 
-        // Odczyt nagłówków (opcjonalne)
+        // Odczyt nagłówków 
         if (in.hasNextLine()) {
             String naglowek = in.nextLine();
-            System.out.println("Nagłówki: " + naglowek);
+            System.out.println(naglowek);
         }
 
         // Odczyt danych
         while (in.hasNextLine()) {
-            String line = in.nextLine(); // Pobierz wiersz
-            String[] dane = line.split(","); // Rozdziel dane za pomocą przecinka
+            String line = in.nextLine(); // Pobiera wiersz
+            String[] dane = line.split(","); // rozdziela dane za pomocą przecinka
 
-            // Wyświetl wartości w konsoli
-            for (String value : dane) {
-                System.out.print(value + " ");
+            // Wyświetlanie wartości 
+            for (String wypis : dane) {
+                System.out.print(wypis + " ");
             }
             System.out.println();
         }

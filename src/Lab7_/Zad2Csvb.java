@@ -12,8 +12,8 @@ public class Zad2Csvb {
         zapis.println("Kolumna1,Kolumna2,Kolumna3");
 
         // Zapisujemy dane, oddzielając je przecinkami
-        zapis.println("jeden,3,zapisujemy do pliku");
-        zapis.println("dwa,2,kolejny wiersz");
+        zapis.println("jeden,1,wiersz1");
+        zapis.println("dwa,2,wiersz2");
 
         // Zamykamy plik
         zapis.close();

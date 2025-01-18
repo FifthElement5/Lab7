@@ -7,7 +7,7 @@ public class Zad1c {
     public static void main(String[] args) {
     	
     	Kalkulator kalk0 = new Kalkulator();
-    	System.out.println("test: " + kalk0.getListaLiczb().get(1));
+    	
       
         Kalkulator kalk1 = new Kalkulator(10);
         kalk1.zliczanie('-'); 

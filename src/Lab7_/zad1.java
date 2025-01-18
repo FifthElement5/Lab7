@@ -2,6 +2,8 @@ package Lab7_;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+
+/// bugi do poprawienia
 	
 public class zad1 {
     public static void main(String[] args) {
